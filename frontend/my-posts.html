@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>My Posts - MyBlog</title><link rel="stylesheet" href="styles.css"></head>
+<body><div class="site-shell">
+<header class="nav"><a class="brand" href="index.html">MyBlog</a><nav class="nav-links">
+<a href="index.html">Home</a><a href="my-posts.html">My Posts</a><a href="login.html">Login</a><a class="nav-btn" href="register.html">Register</a><button class="nav-btn logout-btn" type="button">Logout</button>
+</nav></header>
+<main class="page">
+<section class="dashboard">
+<div class="toolbar"><div><h1>My Posts</h1><p class="api-note">GET /posts returns all posts in your current backend. Edit/Delete is still restricted by the backend to the owner.</p></div><a class="btn" href="create-post.html">+ Create New Post</a></div>
+<div id="post-list" class="post-list"><div class="loading">Loading posts...</div></div>
+</section>
+</main><footer class="footer">© 2026 MyBlog. All rights reserved.</footer></div>
+<script src="app.js"></script></body></html>

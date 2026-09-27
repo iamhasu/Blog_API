@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>MyBlog</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="site-shell">
+  <header class="nav">
+    <a class="brand" href="index.html">MyBlog</a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="my-posts.html">My Posts</a>
+      <a href="login.html">Login</a>
+      <a class="nav-btn" href="register.html">Register</a>
+      <button class="nav-btn logout-btn" type="button">Logout</button>
+    </nav>
+  </header>
+
+  <main class="page">
+    <section class="hero">
+      <h1>Welcome to MyBlog</h1>
+      <p>Read, write and share your thoughts.</p>
+      <a class="btn" href="create-post.html">Create a Post</a>
+    </section>
+
+    <section class="content">
+      <h2 class="section-title">Latest Posts</h2>
+      <div id="latest-posts" class="posts-grid">
+        <div class="loading">Loading posts...</div>
+      </div>
+      <p class="api-note">Your current backend protects <code>GET /posts</code>, so you must be logged in to load posts.</p>
+    </section>
+  </main>
+
+  <footer class="footer">© 2026 MyBlog. All rights reserved.</footer>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Edit Post - MyBlog</title><link rel="stylesheet" href="styles.css"></head>
+<body><div class="site-shell">
+<header class="nav"><a class="brand" href="index.html">MyBlog</a><nav class="nav-links">
+<a href="index.html">Home</a><a href="my-posts.html">My Posts</a><a href="login.html">Login</a><a class="nav-btn" href="register.html">Register</a><button class="nav-btn logout-btn" type="button">Logout</button>
+</nav></header>
+<main class="page">
+<form id="edit-form" class="editor-wrap">
+<h1>Edit Post</h1>
+<div id="message" class="message" hidden></div>
+<div class="field"><label>Title</label><input class="input" name="title" maxlength="255" required></div>
+<div class="field"><label>Content</label><textarea class="textarea editor-textarea" name="content" required></textarea></div>
+<div class="form-actions"><button class="btn" type="submit">Update Post</button><a class="small-btn" href="my-posts.html">Cancel</a></div>
+</form>
+</main><footer class="footer">© 2026 MyBlog. All rights reserved.</footer></div>
+<script src="app.js"></script></body></html>
